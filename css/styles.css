@@ -208,6 +208,9 @@ a {
   background: #f5f4fa;
   margin-bottom: 30px;
 }
+.advantages-icon {
+  width: 70px;
+}
 .advantages-list img {
   display: block;
 }
