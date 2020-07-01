@@ -138,16 +138,25 @@ a {
 }
 /* Главный банер */
 .hero-banner {
+  max-width: 1600px;
+  height: 600px;
   text-align: center;
   padding-top: 190px;
   padding-bottom: 200px;
-  background-image: url(../images/Header-img-opt.jpg);
   background: rgba(47, 48, 58, 0.8);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/Header-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-title {
   display: inline-block;
   max-width: 696px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36em;
@@ -442,6 +451,7 @@ footer .logo-seconf-half {
 .subscribe-link:hover {
   color: var(--accent-text-color);
 }
+
 .conteiner-developer {
   height: 60px;
   text-align: center;
