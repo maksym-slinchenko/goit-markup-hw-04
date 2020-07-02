@@ -14,8 +14,8 @@
   <body>
     <!-- Топ линия -->
     <header>
-      <nav class="conteiner site-nav-main">
-        <div class="conteiner site-nav-secondary">
+      <nav class="container site-nav-main">
+        <div class="container site-nav-secondary">
           <a href="index.html" class="logo"
             ><span class="logo-firs-half">Web</span>
             <span class="logo-second-half">Studio</span>
@@ -28,12 +28,18 @@
             <li class="nav-list-item"><a href="">Контакты</a></li>
           </ul>
           <ul class="contacts">
-            <li>
+            <li class="contacts-item">
+              <svg class="our-mail-icon">
+                <use href="./images/symbol-defs.svg#envelope-hover"></use>
+              </svg>
               <a class="our-mail" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="contacts-item">
+              <svg class="our-mail-icon">
+                <use href="./images/symbol-defs.svg#smartphone"></use>
+              </svg>
               <a class="our-phone" href="tel:+38-096-111-11-11"
                 >+38 096 111 11 11</a
               >
@@ -52,9 +58,9 @@
       </div>
       <!-- Наши преимущества -->
       <section class="advantages-section">
-        <ul class="conteiner advantages-list">
+        <ul class="container advantages-list">
           <li>
-            <div class="image-conteiner">
+            <div class="image-container">
               <svg class="advantages-icon">
                 <use href="./images/symbol-defs.svg#antena"></use>
               </svg>
@@ -66,7 +72,7 @@
             </p>
           </li>
           <li>
-            <div class="image-conteiner">
+            <div class="image-container">
               <svg class="advantages-icon">
                 <use href="./images/symbol-defs.svg#clock"></use>
               </svg>
@@ -78,7 +84,7 @@
             </p>
           </li>
           <li>
-            <div class="image-conteiner">
+            <div class="image-container">
               <svg class="advantages-icon">
                 <use href="./images/symbol-defs.svg#diagram"></use>
               </svg>
@@ -90,7 +96,7 @@
             </p>
           </li>
           <li>
-            <div class="image-conteiner">
+            <div class="image-container">
               <svg class="advantages-icon">
                 <use href="./images/symbol-defs.svg#astronaut"></use>
               </svg>
@@ -105,7 +111,7 @@
       </section>
       <!-- Чем мы занимаемся -->
       <section class="what-do-we-do-section">
-        <div class="conteiner primery-what-do-we-do">
+        <div class="container primery-what-do-we-do">
           <h2 class="what-do-we-do-title">Чем мы занимаемся</h2>
 
           <ul class="what-do-we-do-list">
@@ -132,7 +138,7 @@
       </section>
       <!-- Наша команда -->
       <section class="our-team-section">
-        <div class="conteiner our-team">
+        <div class="container our-team">
           <h2 class="our-team-title">Наша команда</h2>
           <ul class="our-team-list" lang="en">
             <li class="our-team-item">
@@ -141,14 +147,39 @@
                 alt="John Smith's photo"
                 width="270"
               />
+
               <h3>John Smith</h3>
               <p>Product Designer</p>
               <!-- Социальные сети -->
               <ul class="networks">
-                <li><a href="">instagram</a></li>
-                <li><a href="">twitter</a></li>
-                <li><a href="">facebook</a></li>
-                <li><a href="">linkedin</a></li>
+                <li class="network-item">
+                  <a href="" class="networks-icon">
+                    <svg width="20" height="20">
+                      <use href="./images/symbol-defs.svg#instagram-2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="network-item">
+                  <a href="" class="networks-icon">
+                    <svg width="20" height="20">
+                      <use href="./images/symbol-defs.svg#twitter-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="network-item">
+                  <a href="" class="networks-icon">
+                    <svg width="20" height="20">
+                      <use href="./images/symbol-defs.svg#facebook-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="network-item">
+                  <a href="" class="networks-icon">
+                    <svg width="20" height="20">
+                      <use href="./images/symbol-defs.svg#linkedin-1"></use>
+                    </svg>
+                  </a>
+                </li>
               </ul>
             </li>
             <li class="our-team-item">
@@ -161,10 +192,34 @@
               <p>Frontend Developer</p>
               <!-- Социальные сети -->
               <ul class="networks">
-                <li><a href="">instagram</a></li>
-                <li><a href="">twitter</a></li>
-                <li><a href="">facebook</a></li>
-                <li><a href="">linkedin</a></li>
+                <li class="network-item">
+                  <a href="" class="networks-icon">
+                    <svg width="20" height="20">
+                      <use href="./images/symbol-defs.svg#instagram-2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="network-item">
+                  <a href="" class="networks-icon">
+                    <svg width="20" height="20">
+                      <use href="./images/symbol-defs.svg#twitter-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="network-item">
+                  <a href="" class="networks-icon">
+                    <svg width="20" height="20">
+                      <use href="./images/symbol-defs.svg#facebook-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="network-item">
+                  <a href="" class="networks-icon">
+                    <svg width="20" height="20">
+                      <use href="./images/symbol-defs.svg#linkedin-1"></use>
+                    </svg>
+                  </a>
+                </li>
               </ul>
             </li>
             <li class="our-team-item">
@@ -177,10 +232,34 @@
               <p>Marketing</p>
               <!-- Социальные сети -->
               <ul class="networks">
-                <li><a href="">instagram</a></li>
-                <li><a href="">twitter</a></li>
-                <li><a href="">facebook</a></li>
-                <li><a href="">linkedin</a></li>
+                <li class="network-item">
+                  <a href="" class="networks-icon">
+                    <svg width="20" height="20">
+                      <use href="./images/symbol-defs.svg#instagram-2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="network-item">
+                  <a href="" class="networks-icon">
+                    <svg width="20" height="20">
+                      <use href="./images/symbol-defs.svg#twitter-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="network-item">
+                  <a href="" class="networks-icon">
+                    <svg width="20" height="20">
+                      <use href="./images/symbol-defs.svg#facebook-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="network-item">
+                  <a href="" class="networks-icon">
+                    <svg width="20" height="20">
+                      <use href="./images/symbol-defs.svg#linkedin-1"></use>
+                    </svg>
+                  </a>
+                </li>
               </ul>
             </li>
             <li class="our-team-item">
@@ -193,49 +272,86 @@
               <p>UI Designer</p>
               <!-- Социальные сети -->
               <ul class="networks">
-                <li><a href="">instagram</a></li>
-                <li><a href="">twitter</a></li>
-                <li><a href="">facebook</a></li>
-                <li><a href="">linkedin</a></li>
+                <li class="network-item">
+                  <a href="" class="networks-icon">
+                    <svg width="20" height="20">
+                      <use href="./images/symbol-defs.svg#instagram-2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="network-item">
+                  <a href="" class="networks-icon">
+                    <svg width="20" height="20">
+                      <use href="./images/symbol-defs.svg#twitter-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="network-item">
+                  <a href="" class="networks-icon">
+                    <svg width="20" height="20">
+                      <use href="./images/symbol-defs.svg#facebook-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="network-item">
+                  <a href="" class="networks-icon">
+                    <svg width="20" height="20">
+                      <use href="./images/symbol-defs.svg#linkedin-1"></use>
+                    </svg>
+                  </a>
+                </li>
               </ul>
             </li>
           </ul>
         </div>
       </section>
       <!-- Постоянные клиенты -->
+
       <section class="cusnomer-section">
-        <div class="conteiner customer">
+        <div class="container customer">
           <h2 class="customer-title">Постоянные клиенты</h2>
           <ul class="customer-list">
             <li>
-              <a href=""
-                ><img src="./images/our-clients/logo-1.svg" alt="логотип 1"
-              /></a>
+              <a href="">
+                <svg class="customer-icon" width="44">
+                  <use href="./images/symbol-defs.svg#logo-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <svg class="customer-icon" width="40">
+                  <use href="./images/symbol-defs.svg#logo-2"></use>
+                </svg>
+              </a>
             </li>
             <li>
               <a href=""
-                ><img src="./images/our-clients/logo-2.svg" alt="логотип 2"
-              /></a>
+                ><svg class="customer-icon" width="41">
+                  <use href="./images/symbol-defs.svg#logo-3"></use>
+                </svg>
+              </a>
             </li>
             <li>
               <a href=""
-                ><img src="./images/our-clients/logo-3.svg" alt="логотип 3"
-              /></a>
+                ><svg class="customer-icon" width="80">
+                  <use href="./images/symbol-defs.svg#logo-4"></use>
+                </svg>
+              </a>
             </li>
             <li>
               <a href=""
-                ><img src="./images/our-clients/logo-4.svg" alt="логотип 4"
-              /></a>
+                ><svg class="customer-icon" width="57">
+                  <use href="./images/symbol-defs.svg#logo-5"></use>
+                </svg>
+              </a>
             </li>
             <li>
               <a href=""
-                ><img src="./images/our-clients/logo-5.svg" alt="логотип 5"
-              /></a>
-            </li>
-            <li>
-              <a href=""
-                ><img src="./images/our-clients/logo-6.svg" alt="логотип 6"
-              /></a>
+                ><svg class="customer-icon" width="88">
+                  <use href="./images/symbol-defs.svg#logo-6"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -244,8 +360,9 @@
     <!-- Нижняя строка с контактами -->
     <footer>
       <section class="last-section">
-        <div class="conteiner last-box">
-          <div class="conteiner-logo&address">
+        <h2>Симантичный заголовок</h2>
+        <div class="container last-box">
+          <div class="container-logo&address">
             <p class="logo">
               <span class="logo-firs-half">Web</span>
               <span class="logo-seconf-half">Studio</span>
@@ -258,23 +375,52 @@
               </ul>
             </address>
           </div>
-          <div class="conteiner-join-us">
+          <div class="container-join-us">
             <p class="offer-to-join-us">Присоединяйтесь</p>
-            <ul>
-              <li><a href="">Instagram</a></li>
-              <li><a href="">Twitter</a></li>
-              <li><a href="">Facebook</a></li>
-              <li><a href="">Linkdin</a></li>
+            <ul class="networks">
+              <li class="network-item">
+                <a href="" class="join-us-networks-icon">
+                  <svg width="20" height="20">
+                    <use href="./images/symbol-defs.svg#instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="network-item">
+                <a href="" class="join-us-networks-icon">
+                  <svg width="20" height="20">
+                    <use href="./images/symbol-defs.svg#twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="network-item">
+                <a href="" class="join-us-networks-icon">
+                  <svg width="20" height="20">
+                    <use href="./images/symbol-defs.svg#facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="network-item">
+                <a href="" class="join-us-networks-icon">
+                  <svg width="20" height="20">
+                    <use href="./images/symbol-defs.svg#linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
             </ul>
           </div>
-          <div class="conteiner-subscribe">
+          <div class="container-subscribe">
             <p class="offer-to-subscribe">Подпишитесь на рассылку</p>
             <input class="mail-sign" type="text" placeholder="E-mail" />
-            <a class="subscribe-link" href="">Подписаться</a>
+            <div class="container-subscribe-link">
+              <a class="subscribe-link" href="">Подписаться</a>
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </div>
           </div>
         </div>
       </section>
-      <div class="conteiner-developer">
+      <div class="container-developer">
         <p class="developer-information">2020 | Developed by GoIT Students</p>
       </div>
     </footer>

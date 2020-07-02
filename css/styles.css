@@ -89,13 +89,8 @@ a {
 .nav-list-item:not(:last-child) {
   margin-right: 50px;
 }
-.contacts {
-  margin: 0;
-  padding: 0;
-  display: inline-flex;
-  margin-left: auto;
-}
-.conteiner {
+
+.container {
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
@@ -113,29 +108,56 @@ a {
   padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
+.contacts {
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  margin-left: auto;
+}
+.contacts-item {
+  display: flex;
+  align-items: center;
+}
+.contacts-item:hover .our-mail,
+.contacts-item:hover .our-mail-icon,
+.contacts-item:focus .our-mail,
+.contacts-item:focus .our-mail-icon {
+  color: var(--accent-text-color);
+  fill: var(--accent-text-color);
+}
+.contacts-item:hover .our-phone,
+.contacts-item:hover .our-phone-icon,
+.contacts-item:focus .our-phone,
+.contacts-item:focus .our-phone-icon {
+  color: var(--accent-text-color);
+  fill: var(--accent-text-color);
+}
+
 .contacts .our-mail {
+  display: inline-block;
   margin-right: 30px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14em;
   letter-spacing: 0.02em;
   color: #757575;
+  margin-left: 10px;
 }
-.contacts .our-mail:focus,
-.contacts .our-mail:hover {
-  color: var(--accent-text-color);
+
+.our-mail-icon {
+  width: 16px;
+  height: 11.2px;
 }
+
 .contacts .our-phone {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14em;
   letter-spacing: 0.02em;
   color: #757575;
+  margin-left: 10px;
 }
-.contacts .our-phone:focus,
-.contacts .our-phone:hover {
-  color: var(--accent-text-color);
-}
+
 /* Главный банер */
 .hero-banner {
   max-width: 1600px;
@@ -200,7 +222,7 @@ a {
   border-radius: 4px;
   width: 270px;
 }
-.image-conteiner {
+.image-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -210,6 +232,7 @@ a {
 }
 .advantages-icon {
   width: 70px;
+  height: 70px;
 }
 .advantages-list img {
   display: block;
@@ -332,8 +355,30 @@ a {
   letter-spacing: 0.03em;
 }
 .networks {
+  display: flex;
+  justify-content: center;
   margin-top: 16px;
+  margin-bottom: 24px;
 }
+
+.our-team-list .networks-icon {
+  display: block;
+  width: 44px;
+  height: 44px;
+  fill: #afb1b8;
+  padding: 12px;
+}
+
+.network-item:not(:first-child) {
+  margin-left: 10px;
+}
+.networks-icon:hover,
+.networks-icon:focus {
+  fill: var(--secondary-text-color);
+  background-color: var(--accent-text-color);
+  border-radius: 50%;
+}
+
 /* Постоянные клиенты */
 .cusnomer-section {
   padding-top: 94px;
@@ -359,8 +404,16 @@ a {
 .customer-list li:not(:first-child) {
   margin-left: 30px;
 }
+.customer-list li:hover a,
+.customer-list li:focus a,
+.customer-list li:hover,
+.customer-list li:focus {
+  border-color: var(--accent-text-color);
+  fill: var(--accent-text-color);
+}
 .customer-list a {
   display: inline-block;
+  fill: #afb1b8;
 }
 .customer-title {
   margin: 0;
@@ -375,6 +428,9 @@ a {
 
 footer {
   background: #2f303a;
+}
+.last-section h2 {
+  display: none;
 }
 .last-box {
   display: flex;
@@ -411,7 +467,7 @@ footer .logo-seconf-half {
 .address-list a:hover {
   color: var(--accent-text-color);
 }
-.conteiner-join-us {
+.container-join-us {
   margin-left: 69px;
 }
 .offer-to-join-us {
@@ -423,7 +479,22 @@ footer .logo-seconf-half {
   text-transform: uppercase;
   color: var(--secondary-text-color);
 }
-.conteiner-subscribe {
+.join-us-networks-icon {
+  display: block;
+  width: 44px;
+  height: 44px;
+  fill: #afb1b8;
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.join-us-networks-icon:hover,
+.join-us-networks-icon:focus {
+  fill: var(--secondary-text-color);
+  background-color: var(--accent-text-color);
+  border-radius: 50%;
+}
+.container-subscribe {
   margin-left: 94px;
 }
 .offer-to-subscribe {
@@ -438,24 +509,43 @@ footer .logo-seconf-half {
 
 .mail-sign {
   font-size: 16px;
-  line-height: 1.87em;
+  line-height: 0;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  background-color: inherit;
+  min-width: 358px;
 }
 
 .subscribe-link {
+  display: inline-block;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87em;
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
 }
+.subscribe-icon {
+  margin-left: 10px;
+}
+.container-subscribe-link {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+}
 .subscribe-link:focus,
 .subscribe-link:hover {
   color: var(--accent-text-color);
 }
 
-.conteiner-developer {
+.container-developer {
   height: 60px;
   text-align: center;
   padding-top: 18px;
